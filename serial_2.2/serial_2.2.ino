@@ -15,7 +15,7 @@
 
 //***************  SETUP   ****************************************
 void setup() {
-    Serial.begin(9600);     // carrega Serial lliberia comunicació monitor at 9600 bps
+    Serial.begin(9600);     // carrega Serial lliberia comunicació monitor a 9600 bps
     
     Serial.print("a = ");
     Serial.println(a);

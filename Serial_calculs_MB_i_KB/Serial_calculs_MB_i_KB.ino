@@ -15,35 +15,35 @@ void setup()               //run once, when the sketch starts
   Serial.print ("In theory, it can store ");
   
   drive_mb = drive_gb;
-  drive_mb = drive_mb * 1024;
+  drive_mb = drive_mb * 1024; // converteix de mb a gb 
   
   Serial.print (drive_mb);
-  Serial.print (" Megabytes,"); 
+  Serial.print (" Megabytes,"); // text a escriure 
 
   drive_kb = drive_gb;
-  drive_kb = drive_kb * 1024000;
+  drive_kb = drive_kb * 1024000;  // converteix de kb a gb 
 
   Serial.print (drive_kb);
-  Serial.println (" Kilobytes.");
+  Serial.println (" Kilobytes."); // text a escriure 
 
-  Serial.print ("But it really only stores ");
+  Serial.print ("But it really only stores ");   // text a escriue 
 
   real_drive_mb = drive_gb;
-  real_drive_mb = real_drive_mb * 1000;
+  real_drive_mb = real_drive_mb * 1000;  // converteix de mb a gb 
 
   Serial.print (real_drive_mb);
-  Serial.print (" Megabytes,");
+  Serial.print (" Megabytes,"); // text a escriure 
 
   real_drive_kb = drive_gb;
-  real_drive_kb = real_drive_kb * 1000000;
+  real_drive_kb = real_drive_kb * 1000000;  // converteix de kb a gb 
 
   Serial.print ( real_drive_kb);
-  Serial.println (" Kilobytes.");
+  Serial.println (" Kilobytes.");   // text a escriure 
 
-  Serial.print ("You are missing ");
+  Serial.print ("You are missing ");  // text a escriure 
 
 
-  Serial.print ( "Kilobytes!");
+  Serial.print ( "Kilobytes!");   // text a escriure 
 
   
   

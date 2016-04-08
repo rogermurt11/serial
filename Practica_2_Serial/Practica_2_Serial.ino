@@ -1,10 +1,21 @@
+/*************************************************************************
+**                                                                      **                                                                     
+**                       PRACTICA 2 SERIAL                              **                                                                      
+**                                                                      **                                                                      
+**                                                                      **
+*************************************************************************/
+
+//******  Includes  ******************************************************
+
+
+//******  Variables  *****************************************************
 int a = 5;                // definim el valor de cada lletra perquè a continuació, les lletres que s'operin tinguin un valor cada una 
 int b = 10;              //       "                                          "                                          "
 int c = 20;             //        "                                          "                                          "
 
-void setup()              // excecuta el programa una vegada al iniciar-lo 
-{
-  Serial.begin(9600);     // llegeix el programa a 9600 bps
+//******  Setup  *********************************************************                                                                      
+void setup() {
+ Serial.begin(9600);     // llegeix el programa a 9600 bps
 
   Serial.println("Here is some math: ");
 
@@ -28,9 +39,10 @@ void setup()              // excecuta el programa una vegada al iniciar-lo
   Serial.println(c % b);
   
   Serial.print("b - c = ");       // resta b - c 
-  Serial.println(b - c);
+  Serial.println(b - c); 
 }
 
+//******  Loop  **********************************************************
 void loop()  // we need this to be here even though its empty
 {
 }

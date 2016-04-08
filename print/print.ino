@@ -1,17 +1,34 @@
+/*************************************************************************
+**                                                                      **                                                                     
+**                               PRINT                                  **                                                                      
+**                                                                      **                                                                      
+**                                                                      **
+*************************************************************************/
+
+//******  Includes  ******************************************************
+
+
+//******  Variables  *****************************************************
 int a = 55;
 
+//******  Setup  *********************************************************                                                                      
 void setup() {
-  // put your setup code here, to run once:
+// put your setup code here, to run once:
 Serial.begin (9600);
-Serial.println ("ASCII Table ~ Character Map");
-
+Serial.println ("ASCII Table ~ Character Map"); 
 }
 
+//******  Loop  **********************************************************
 void loop() {
-  // put your main code here, to run repeatedly:
+ // put your main code here, to run repeatedly:
 
 Serial.write (a);
 
 Serial.print ( ",dec :");
-Serial.print(a);
+Serial.print(a); 
 }
+
+
+  
+
+
